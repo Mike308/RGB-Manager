@@ -64,3 +64,26 @@ void MainWindow::on_b_slider_valueChanged(int value)
     ui->b_str->setText(QString::number(ui->b_slider->value()));
     controller->setRGB(ui->r_slider->value(),ui->g_slider->value(),ui->b_slider->value());
 }
+
+void MainWindow::on_h_slider_valueChanged(int value)
+{
+    ui->h_str->setText(QString::number(ui->h_slider->value()));
+    controller->setHSV(ui->h_slider->value(),ui->s_slider->value(),ui->v_slider->value());
+
+}
+
+void MainWindow::on_s_slider_valueChanged(int value)
+{
+    ui->s_str->setText(QString::number(ui->s_slider->value()));
+    controller->setHSV(ui->h_slider->value(),ui->s_slider->value(),ui->v_slider->value());
+}
+
+void MainWindow::on_v_slider_valueChanged(int value)
+{
+    ui->v_str->setText(QString::number(ui->v_slider->value()));
+    controller->setHSV(ui->h_slider->value(),ui->s_slider->value(),ui->v_slider->value());
+}
+
+
+
+

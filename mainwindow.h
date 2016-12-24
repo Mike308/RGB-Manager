@@ -26,6 +26,12 @@ private slots:
 
     void on_b_slider_valueChanged(int value);
 
+    void on_h_slider_valueChanged(int value);
+
+    void on_s_slider_valueChanged(int value);
+
+    void on_v_slider_valueChanged(int value);
+
 private:
     RGBController* controller;
     QPalette *pallete_r;
