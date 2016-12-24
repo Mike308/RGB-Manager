@@ -32,6 +32,8 @@ private slots:
 
     void on_v_slider_valueChanged(int value);
 
+    void on_pushButton_clicked();
+
 private:
     RGBController* controller;
     QPalette *pallete_r;

@@ -20,7 +20,8 @@ MainWindow::MainWindow(QWidget *parent) :
     pallete_b->setColor(QPalette::Text,Qt::blue);
     ui->b_str->setPalette(*pallete_b);
     ui->b_str->setText(QString::number(ui->b_slider->value()));
-
+    ui->type->addItem("Circle of Color");
+    ui->type->addItem("Random Color");
 
 
     controller  = new RGBController("COM13");
@@ -85,5 +86,21 @@ void MainWindow::on_v_slider_valueChanged(int value)
 }
 
 
+
+
+
+void MainWindow::on_pushButton_clicked()
+{
+   if(ui->type->currentIndex()==0){
+
+       controller->setAnimation(3,ui->speed->value(),ui->step->value());
+
+
+   }else if(ui->type->currentIndex()==1){
+
+       controller->setAnimation(4,ui->speed->value(),ui->step->value());
+
+   }
+}
 
 
