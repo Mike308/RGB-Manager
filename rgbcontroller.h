@@ -15,6 +15,7 @@ public:
     void setHSV(int h,int s,int v);
     void setAnimation(int mode,unsigned long speed,int step);
 
+
 private:
     QextSerialPort *port;
     void open_serial_port(QString port_name);

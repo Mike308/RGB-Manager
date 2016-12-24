@@ -39,11 +39,17 @@ void RGBController::setHSV(int h, int s, int v){
     QString h_str = QString::number(h);
     QString s_str = QString::number(s);
     QString v_str = QString::number(v);
+    write_to_serial_port("1^"+h_str+"^"+s_str+"^"+v_str);
 
 
 }
 
+
+
 void RGBController::setAnimation(int mode, unsigned long speed, int step){
+
+
+
 
 
 
